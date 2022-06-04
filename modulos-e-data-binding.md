@@ -69,58 +69,11 @@ Exercício 3) Com o projeto do exercício anterior, crie 3 componentes, 1 header
 
 Exercício 4) Com o projeto do exercício anterior, estilize de forma básica o header e footer.
 
-Exercício 5) Com o projeto do exercício anterior, no componente de listagem de colaboradores, crie uma variável que vai receber a lista de colaboradores abaixo, e faça a listagem na tela com data-binding através de interpolação.
->colaboradores = [
-        {
-            id: 1,
-            nome: 'Nathan Carlos',
-            salario: 7000,
-            cargo: 'Dev Pl'
-        },
-        {
-            id: 2,
-            nome: 'David Carlos',
-            salario: 3000,
-            cargo: 'Dev Jr'
-        },
-        {
-            id: 3,
-            nome: 'Mateus Augusto',
-            salario: 3500,
-            cargo: 'Dev Jr'
-        },
-        {
-            id: 4,
-            nome: 'Alberto Silva',
-            salario: 10000,
-            cargo: 'Dev Sr'
-        },
-        {
-            id: 5,
-            nome: 'Rogerio Souza',
-            salario: 9000,
-            cargo: 'Dev Sr'
-        },
-        {
-            id: 6,
-            nome: 'Gabriel Miguel',
-            salario: 9500,
-            cargo: 'Dev Sr'
-        },
-        {
-            id: 6,
-            nome: 'Alan Jhonnes',
-            salario: 11000,
-            cargo: 'Arquiteto'
-        }
-    ]
+Exercício 5) No app.component.html utilize nessa ordem: header, listagem, footer.
 
+Exercício 6) No app.component crei uma tag H1 e interpole um título de uma variável criada no typescript.
 
-Exercício 6) No app.component.html utilize nessa ordem: header, listagem, footer.
-
-Exercício 7) No app.component crei uma tag H1 e interpole um título de uma variável criada no typescript.
-
-Exercício 8) No app.component crie uma div e exiba as seguintes informações do objeto do colaborador abaixo:
+Exercício 7) No app.component crie uma div e exiba as seguintes informações do objeto do colaborador abaixo:
 >{
     id: 7,
     nome: 'Nathan Carlos Exercicio',
