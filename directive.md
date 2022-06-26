@@ -56,6 +56,10 @@ No meu caso, coloquei no meu h3 do header.component, então ele atualizou o text
 ## Lista de exercícios
 Para conseguir realizar a lista de exercícios aguarde a aula para um entendimento melhor, porém se quiser se desafiar a fazer tudo bem :)
 
-Exercício 1) Crie uma diretiva de atributo para alterar a cor de elementos quando for utilizada.
+Exercício 1) Utilize algum projeto dos exercícios anteriores e crie uma diretiva que quando utilizada altere a cor do texto da tag html para azul.
 
-Exercício 2) Utilize ngClass para estilizar a tarefa completa/incompleta de formas diferentes.
+Exercício 2) Utilize algum projeto dos exercícios anteriores e utilize a diretiva ngClass para alterar o css de algum elemento html com base em alguma condição(true/false).
+
+Exercício 3) Utilize algum projeto dos exercícios anteriores e faça a iteração em algum array de objetos repetindo uma estrutura html para todos os itens do array como ensinado em aula, utilizando a diretiva estrutural ngFor.
+
+Exercício 4) Utilize algum projeto dos exercícios anteriores e crie uma condição para que um bloco html seja exibido ou não com base em alguma variável no typescript utilizando a diretiva estrutural ngIf.
