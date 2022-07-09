@@ -1,0 +1,28 @@
+.em-estoque {
+    color: green;
+}
+
+.falta-estoque {
+    color: red;
+}
+
+.card-produto {
+    border: 1px solid #eeeeee;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+}
+
+.details {
+    margin-top: 5px;
+    width: 100%;
+}
