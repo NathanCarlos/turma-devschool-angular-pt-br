@@ -1,0 +1,41 @@
+@import 'src/assets/styles/_colors.scss';
+
+.login-container {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: #EDEDED;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 $cor-box-shadow-padrao;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    h3 {
+        font-weight: 500;
+    }
+    .error {
+        color: $cor-aviso-perigo;
+        font-size: 12px;
+    }
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .form-field {
+            width: 100%;
+            align-items: flex-start;
+            input {
+                width: 100%;
+                font-size: 20px;
+                height: 50px;
+                padding: 10px;
+            }
+        }
+    }
+}
