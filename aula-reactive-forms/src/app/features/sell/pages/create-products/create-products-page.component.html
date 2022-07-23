@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="register-container">
+    <h3>Cadastro de Produtos</h3>
+    <form class="register-form">
+        <div class="form-field">
+            <label class="label-input">Descrição do produto:</label>
+            <input type="text" placeholder="Digite a descrição">
+        </div>
+        <div class="form-field">
+            <label class="label-input">Quantidade:</label>
+            <input type="number" placeholder="Digite a quantidade do produto">
+        </div>
+        <div class="form-field">
+            <label class="label-input">Valor do produto:</label>
+            <input type="number" placeholder="Digite o valor do produto">
+            <span class="error">
+            O valor da do produto deve estar entre 100 e 1500*</span>
+        </div>
+        <div class="form-field">
+            <label class="label-input">Imagem do produto:</label>
+            <input type="text" placeholder="Digite a url">
+        </div>
+        <div class="action-form">
+            <button
+            class="cadastrarProduto"
+            type="submit"
+            (click)="onSubmit()">Salvar</button>
+        </div>
+    </form>
+</div>
+<app-footer></app-footer>
