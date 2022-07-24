@@ -1,0 +1,16 @@
+<h1>{{ titulo }}</h1>
+
+<div class="container">
+    <div class="card" *ngFor="let produto of produtos">
+        <img width="250px" height="250px"
+            [src]="produto.imagem">
+        <div class="card-description">
+            <p><b>{{produto.descricao}}</b></p>
+            <h3>{{produto.preco | currency:'BRL' }}</h3>
+            <p>Pague {{ precoComDesconto(produto.preco) | currency: 'R$' }} no boleto com 10% de desconto!</p>
+        </div>
+        <div class="actions add-to-cart" (click)="detalhesProduto(produto.id)">
+            Detalhes
+        </div>
+    </div>
+</div>

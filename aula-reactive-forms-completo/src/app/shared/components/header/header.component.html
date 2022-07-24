@@ -1,0 +1,9 @@
+<nav>
+    <h3>MJV Store</h3>
+    <ul>
+        <li routerLink="/sell" *ngIf="user">Produtos</li>
+        <li routerLink="/create-product" *ngIf="user">Cadastrar Produto</li>
+        <li routerLink="/login" *ngIf="!user">Login</li>
+        <li *ngIf="user" (click)="exit()">Sair</li>
+    </ul>
+</nav>
