@@ -1,0 +1,65 @@
+@import 'src/assets/styles/_colors.scss';
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+}
+
+input, select {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: $cor-padrao-background-input;
+    border-bottom: 2px solid $cor-padrao-cinza-claro;
+    padding: 10px 0px 10px 0px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+    width: 30%;
+}
+
+.form-field .label-input{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-field-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.primary-button {
+    background-color: #355C7D ;
+    border: none;
+    color: white;
+    padding: 15px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0.9;
+    &:hover {
+        opacity: 1;
+    }
+    &:disabled {
+        opacity: 0.5;
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

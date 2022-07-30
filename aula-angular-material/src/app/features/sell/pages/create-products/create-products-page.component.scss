@@ -1,0 +1,56 @@
+@import 'src/assets/styles/_colors.scss';
+
+
+app-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.register-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+    .register-form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .register-form .action-form {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+    }
+    
+    .register-form .action-form button {
+        background-color: #355C7D ;
+        border: none;
+        color: white;
+        padding: 15px 100px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        outline: none;
+        cursor: pointer;
+        border-radius: 4px;
+        opacity: 0.9;
+    }
+    
+    .register-form .action-form button:hover {
+        opacity: 1;
+    }
+    .register-form .action-form button:disabled {
+        opacity: 0.5;
+    }
+    
+}
+
+.error {
+    color: $cor-aviso-perigo;
+    margin-top: 4px;
+}

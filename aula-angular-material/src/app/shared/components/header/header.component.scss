@@ -1,0 +1,30 @@
+@import 'src/assets/styles/_colors.scss';
+
+nav {
+    width: 100%;
+    background-color: $cor-padrao-branca;
+    color: $cor-padrao-textos-nav;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 1px inset;
+    h3 {
+        font-size: 24px;
+        cursor: pointer;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        li {
+            list-style: none;
+            margin-right: 10px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    }
+}
