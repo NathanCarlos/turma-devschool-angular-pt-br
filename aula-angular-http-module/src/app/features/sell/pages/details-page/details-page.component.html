@@ -1,0 +1,11 @@
+<app-header></app-header>
+<div ng-if="product">
+        <p>Descrição do produto: {{ product?.descricao }}</p>
+        <p>Preço: {{ product?.preco | currency: 'R$' }}</p>
+        <p>Quantidade: {{ product?.quantidade }} </p>
+        <img src="{{product?.imagem}}" width="250px" height="250px">
+        <p [ngClass]="{ 'em-estoque': product?.disponivel, 'falta-estoque': !product?.disponivel }">
+            {{ product?.disponivel ? 'Em estoque' : 'Produto em falta' }}</p>
+        <br>
+</div>
+<app-footer></app-footer>

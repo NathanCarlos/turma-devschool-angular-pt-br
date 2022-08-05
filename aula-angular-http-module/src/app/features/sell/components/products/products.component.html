@@ -1,0 +1,65 @@
+<h1>{{ titulo }}</h1>
+
+<div class="container">
+    <div class="card" *ngFor="let produto of produtos">
+        <img width="250px" height="250px"
+            [src]="produto.imagem">
+        <div class="card-description">
+            <p><b>{{produto.descricao}}</b></p>
+            <h3>{{produto.preco | currency:'BRL' }}</h3>
+            <p>Pague {{ precoComDesconto(produto.preco) | currency: 'R$' }} no boleto com 10% de desconto!</p>
+        </div>
+        <div class="actions add-to-cart" (click)="detalhesProduto(produto.id)">
+            Detalhes
+        </div>
+    </div>
+    <mat-spinner></mat-spinner>
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+      <section class="example-section">
+        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+        <mat-checkbox class="example-margin" [disabled]="true">Disabled</mat-checkbox>
+      </section>
+      
+      <section class="example-section">
+        <span class="example-list-section">
+          <mat-checkbox class="example-margin"
+                        [checked]="allComplete"
+                        [color]="task.color"
+                        [indeterminate]="someComplete()"
+                        (change)="setAll($event.checked)">
+            {{task.name}}
+          </mat-checkbox>
+        </span>
+        <span class="example-list-section">
+          <ul>
+            <li *ngFor="let subtask of task.subtasks">
+              <mat-checkbox
+                            [color]="subtask.color"
+                            (ngModelChange)="updateAllComplete()">
+                {{subtask.name}}
+              </mat-checkbox>
+            </li>
+          </ul>
+        </span>
+      </section>
+</div>
+<button mat-raised-button color="primary">Primary</button>
+
