@@ -50,6 +50,10 @@ router.get('/all', (req: Request, res: Response) => {
     res.send(products);
 });
 
+router.get('/:id', (req: Request, res: Response) => {
+    res.send(products.find((product) => product.id === parseInt(req.params.id)));
+});
+
 router.post('/create', (req: Request, res: Response) => {
     const product = req.body;
     product.id = (products[(products.length - 1)].id + 1);
